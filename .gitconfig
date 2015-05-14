@@ -1,0 +1,17 @@
+# http://cheat.errtheblog.com/s/git
+
+[user]
+  name = German Antsiferov
+  email = dxdy@bk.ru
+
+[color]
+	ui = true
+
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+  df = diff
+	dc = diff --cached
+	lg = log --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset' --abbrev-commit
