@@ -2,6 +2,8 @@
 
 REPOSITORY="https://raw.githubusercontent.com/mr-dxdy/environment/master"
 
+log()  { printf "%b\n" "$*"; }
+
 install_gitconfig()
 {
   curl "$REPOSITORY/.gitconfig" > ~/.gitconfig
@@ -19,9 +21,13 @@ install_gemrc()
 
 main_install()
 {
+  log "Environment is installing"
+
   install_gitconfig
   install_aliases
   install_gemrc
+
+  log "Done"
 }
 
 main_install
