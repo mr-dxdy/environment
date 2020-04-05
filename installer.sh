@@ -10,13 +10,18 @@ install_gitconfig()
 }
 
 install_aliases()
-{ 
+{
   curl "$REPOSITORY/.bash_aliases" > ~/.bash_aliases
 }
 
 install_gemrc()
 {
   curl "$REPOSITORY/.gemrc" > ~/.gemrc
+}
+
+install_vimrc()
+{
+  curl "$REPOSITORY/.vimrc" > ~/.vimrc
 }
 
 main_install()
@@ -26,6 +31,7 @@ main_install()
   install_gitconfig
   install_aliases
   install_gemrc
+  install_vimrc
 
   log "Done"
 }
