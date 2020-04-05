@@ -24,6 +24,10 @@ install_vimrc()
   curl "$REPOSITORY/.vimrc" > ~/.vimrc
 }
 
+install_tmux_conf() {
+  curl "$REPOSITORY/.tmux.conf" > ~/.tmux.conf
+}
+
 main_install()
 {
   log "Environment is installing"
@@ -32,6 +36,7 @@ main_install()
   install_aliases
   install_gemrc
   install_vimrc
+  install_tmux_conf
 
   log "Done"
 }
