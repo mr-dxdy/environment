@@ -1,5 +1,8 @@
 # http://cheat.errtheblog.com/s/git
 
+[core]
+  pager = LESSCHARSET=utf-8 less -R
+
 [user]
   name = German Antsiferov
   email = dxdy@bk.ru
