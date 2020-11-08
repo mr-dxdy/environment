@@ -8,6 +8,7 @@ call plug#begin('~/.vim/plugged')
 
 " navigation
 Plug 'preservim/nerdtree'
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 
