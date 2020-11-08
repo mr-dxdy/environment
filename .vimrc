@@ -8,7 +8,13 @@ call plug#begin('~/.vim/plugged')
 
 " navigation
 Plug 'preservim/nerdtree'
+
+" linter
 Plug 'editorconfig/editorconfig-vim'
+
+" search
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -44,3 +50,4 @@ set synmaxcol=210
 
 " hotkeys
 map <C-n> :NERDTreeToggle<CR>
+map <C-t> :FZF<CR>
