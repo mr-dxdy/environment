@@ -4,6 +4,13 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+call plug#begin('~/.vim/plugged')
+
+" navigation
+Plug 'preservim/nerdtree'
+
+call plug#end()
+
 " settings
 syntax enable
 set encoding=utf-8
@@ -33,3 +40,6 @@ set cursorline
 set list
 set listchars=tab:→\ ,trail:·,eol:¬,extends:❯,precedes:❮,nbsp:×
 set synmaxcol=210
+
+" hotkeys
+map <C-n> :NERDTreeToggle<CR>
