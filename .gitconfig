@@ -2,6 +2,7 @@
 
 [core]
   pager = LESSCHARSET=utf-8 less -R
+  editor = vim
 
 [user]
   name = German Antsiferov
@@ -15,6 +16,6 @@
 	ci = commit
 	st = status
 	br = branch
-  df = diff
+    df = diff
 	dc = diff --cached
 	lg = log --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset' --abbrev-commit
