@@ -52,6 +52,10 @@ set list
 set listchars=tab:→\ ,trail:·,eol:¬,extends:❯,precedes:❮,nbsp:×
 set synmaxcol=210
 
+if has('mouse')
+  set mouse=a
+endif
+
 " hotkeys
 map <C-n> :NERDTreeToggle<CR>
 map <C-t> :FZF<CR>
