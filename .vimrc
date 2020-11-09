@@ -8,6 +8,7 @@ call plug#begin('~/.vim/plugged')
 
 " navigation
 Plug 'preservim/nerdtree'
+Plug 'dyng/ctrlsf.vim'
 
 " linter
 Plug 'editorconfig/editorconfig-vim'
