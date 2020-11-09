@@ -16,6 +16,9 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
+" text objects
+Plug 'tpope/vim-commentary'
+
 call plug#end()
 
 " settings
