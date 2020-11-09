@@ -18,6 +18,7 @@ Plug 'junegunn/fzf.vim'
 
 " text objects
 Plug 'tpope/vim-commentary'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
